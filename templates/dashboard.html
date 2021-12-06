@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="main container mt-3 ">
+        <!-- PUT STUFF IN HERE -->
+        <div class="card col-5 p-2 bg-secondary text-warning ">
+            <h3 class="font-weight-bold ">DOJO Survey</h3>
+
+            <form action="/process" method="post">
+
+                <div class="form-group text-white">
+                    <label for="name ">Your Name:</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                </div>
+
+                <div class="dojo location text-white">
+                    <label for="location">DOJO location</label>
+                    <select type="text" name="location" id="location" class="form-control">
+                    <option>Colorado</option>
+                    <option>California</option>
+                    <option>New York</option>
+                    <option>Texas</option>
+                    </select>
+                </div>
+
+                <div class="favorite language text-white">
+                    <label for="language">Favorite Language</label>
+                    <select type="text" name="language" id="language" class="form-control">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>Javascript</option>
+                    <option>Python</option>
+                    </select>
+                </div>
+
+                <div class="comments text-white">
+                    <label for="comments:">comments:</label>
+                    <option value="comments" id="comments"></option>
+                    
+                        <textarea class="form-control" name="comments" id="comments" rows="8"></textarea>
+                        <input class="form-control mt-3  btn btn-danger" type="submit" value="goback">
+                     
+                </div>
+
+                
+            </form>
+
+            
+        </div>
+</body>
+</html>
